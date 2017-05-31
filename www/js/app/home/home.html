@@ -1,0 +1,72 @@
+
+<ion-view view-title="Visitor Info System">
+  <ion-nav-buttons side="left">
+    <a class="button button-clear button-positive" ng-click="onClickSettings()">GPS</a>
+  </ion-nav-buttons>
+  
+  <ion-nav-buttons side="right"> 
+    <label class="toggle toggle-balanced">
+       <input type="checkbox" ng-click="onToggleEnabled()" ng-model="state.enabled">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+    </label>
+  </ion-nav-buttons>
+
+  <ion-content overflow-scroll="true" data-tap-disabled="true" class="padding">
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="text" placeholder="Search" ng-model="search.query" ng-keyup="getPersonInfo()" />
+      </label>
+    </div>
+    <ion-list class="list" delegate-handle="myScrollContent" ng-if="people.length>0">
+      <ion-item class="item my-item"
+	 ng-repeat="person in people" 
+	 ng-click="clickedPerson(person)" 
+	 ng-class="selectedPerson===person?'selected':''">
+        {{person.name}}
+      </ion-item>
+    </ion-list>
+    <div id="det" ng-if="selectedPerson">
+    <b>{{selectedPerson.name}}</b><br/>
+    {{selectedPerson.businessDescr}}<br/>
+    {{selectedPerson.jobcodeDescr}}<br/>
+    {{selectedPerson.officeName}}<br/><br/>
+    </div>
+    <div id="map"></div>
+  </ion-content>
+
+  <ion-footer-bar class="footer bar-stable">
+      <div class="row">
+        <div class="col col-center navigate">
+          <a ng-click="getCurrentPosition()" class="get-current-position button button-icon icon ion-navigate"></a>
+          <span class="provider">
+            <i class="icon ion-alert-circled" ng-hide="provider.enabled" style="color: red;"></i>
+            <i class="icon ion-pinpoint" ng-hide="!provider.gps || !provider.enabled"></i>
+            <i class="icon ion-wifi" ng-hide="!provider.network || !provider.enabled"></i>
+          </span>
+        </div>
+        <div class="col col-center col-40 status" style="text-align:center">
+          <span>Activity</span>
+          <i class="activity icon {{activityName}} {{activityIcon}}"></i>
+          <span class="" style="text-align:center">{{odometer}}km</span>
+
+        </div>
+        <div class="col pace" style="text-align:right;">
+          <ion-spinner icon="ios-small" ng-show="isChangingPace"></ion-spinner>
+          <button class="button icon {{state.startButtonIcon}}" ng-disabled="!state.enabled" ng-click="onClickChangePace()" style="width:50px"></button>
+        </div>
+      </div>
+  
+    <!-- 
+    
+    <div style="-webkit-flex-direction:row;display:-webkit-flex;-webkit-flex:1">
+      
+    </div>
+    <div class="buttons pull-right">
+      
+    </div>
+    -->
+  </ion-footer-bar>
+</ion-view>

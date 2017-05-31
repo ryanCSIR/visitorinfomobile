@@ -1,0 +1,141 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'cordova' ]
+2 info using npm@3.6.0
+3 info using node@v5.7.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData cordova
+8 silly fetchNamedPackageData cordova
+9 silly mapToRegistry name cordova
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/cordova
+13 verbose request uri https://registry.npmjs.org/cordova
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 1:07:17 PM
+16 verbose request id 13e893a5af6c997e
+17 verbose etag W/"58891c88-1056b1"
+18 verbose lastModified Wed, 25 Jan 2017 21:45:44 GMT
+19 http request GET https://registry.npmjs.org/cordova
+20 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+21 info attempt registry request try #2 at 1:07:27 PM
+22 verbose etag W/"58891c88-1056b1"
+23 verbose lastModified Wed, 25 Jan 2017 21:45:44 GMT
+24 http request GET https://registry.npmjs.org/cordova
+25 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+26 info attempt registry request try #3 at 1:08:27 PM
+27 verbose etag W/"58891c88-1056b1"
+28 verbose lastModified Wed, 25 Jan 2017 21:45:44 GMT
+29 http request GET https://registry.npmjs.org/cordova
+30 silly get cb [ 304, undefined ]
+31 verbose etag https://registry.npmjs.org/cordova from cache
+32 verbose get saving cordova to C:\Users\RDekker\AppData\Roaming\npm-cache\registry.npmjs.org\cordova\.cache.json
+33 verbose correctMkdir C:\Users\RDekker\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+34 silly install normalizeTree
+35 silly loadCurrentTree Finishing
+36 silly loadIdealTree Starting
+37 silly install loadIdealTree
+38 silly cloneCurrentTree Starting
+39 silly install cloneCurrentTreeToIdealTree
+40 silly cloneCurrentTree Finishing
+41 silly loadShrinkwrap Starting
+42 silly install loadShrinkwrap
+43 silly loadShrinkwrap Finishing
+44 silly loadAllDepsIntoIdealTree Starting
+45 silly install loadAllDepsIntoIdealTree
+46 silly resolveWithNewModule cordova@6.5.0 checking installable status
+47 silly cache add args [ 'cordova', null ]
+48 verbose cache add spec cordova
+49 silly cache add parsed spec Result {
+49 silly cache add   raw: 'cordova',
+49 silly cache add   scope: null,
+49 silly cache add   name: 'cordova',
+49 silly cache add   rawSpec: '',
+49 silly cache add   spec: 'latest',
+49 silly cache add   type: 'tag' }
+50 silly addNamed cordova@latest
+51 verbose addNamed "latest" is being treated as a dist-tag for cordova
+52 info addNameTag [ 'cordova', 'latest' ]
+53 silly mapToRegistry name cordova
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry uri https://registry.npmjs.org/cordova
+57 verbose addNameTag registry:https://registry.npmjs.org/cordova not in flight; fetching
+58 verbose get https://registry.npmjs.org/cordova not expired, no request
+59 silly addNameTag next cb for cordova with tag latest
+60 silly addNamed cordova@6.5.0
+61 verbose addNamed "6.5.0" is a plain semver version for cordova
+62 silly mapToRegistry name cordova
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry uri https://registry.npmjs.org/cordova
+66 verbose addRemoteTarball https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz not in flight; adding
+67 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz',
+67 verbose addRemoteTarball   'e6ec81b17dd50c17c40b4b87330f7ced38fb0b47' ]
+68 info retry fetch attempt 1 at 1:08:28 PM
+69 info attempt registry request try #1 at 1:08:28 PM
+70 http fetch GET https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+71 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+72 info attempt registry request try #2 at 1:08:38 PM
+73 http fetch GET https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+74 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+75 info attempt registry request try #3 at 1:09:38 PM
+76 http fetch GET https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+77 error fetch failed https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+78 warn retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+79 info retry fetch attempt 2 at 1:09:49 PM
+80 info attempt registry request try #1 at 1:09:49 PM
+81 http fetch GET https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+82 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+83 info attempt registry request try #2 at 1:09:59 PM
+84 http fetch GET https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+85 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+86 info attempt registry request try #3 at 1:10:59 PM
+87 http fetch GET https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+88 error fetch failed https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+89 warn retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+90 info retry fetch attempt 3 at 1:11:59 PM
+91 info attempt registry request try #1 at 1:11:59 PM
+92 http fetch GET https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+93 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+94 info attempt registry request try #2 at 1:12:09 PM
+95 http fetch GET https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+96 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+97 info attempt registry request try #3 at 1:13:09 PM
+98 http fetch GET https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+99 error fetch failed https://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+100 silly rollbackFailedOptional Starting
+101 silly rollbackFailedOptional Finishing
+102 silly runTopLevelLifecycles Starting
+103 silly runTopLevelLifecycles Finishing
+104 silly install printInstalled
+105 verbose stack Error: tunneling socket could not be established, cause=Parse Error
+105 verbose stack     at ClientRequest.onError (C:\Program Files\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:176:17)
+105 verbose stack     at ClientRequest.g (events.js:273:16)
+105 verbose stack     at emitOne (events.js:90:13)
+105 verbose stack     at ClientRequest.emit (events.js:182:7)
+105 verbose stack     at Socket.socketOnData (_http_client.js:353:9)
+105 verbose stack     at emitOne (events.js:90:13)
+105 verbose stack     at Socket.emit (events.js:182:7)
+105 verbose stack     at readableAddChunk (_stream_readable.js:153:18)
+105 verbose stack     at Socket.Readable.push (_stream_readable.js:111:10)
+105 verbose stack     at TCP.onread (net.js:529:20)
+106 verbose cwd C:\Users\RDekker\Desktop\VI
+107 error Windows_NT 6.1.7601
+108 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "cordova"
+109 error node v5.7.0
+110 error npm  v3.6.0
+111 error code ECONNRESET
+112 error network tunneling socket could not be established, cause=Parse Error
+113 error network This is most likely not a problem with npm itself
+113 error network and is related to network connectivity.
+113 error network In most cases you are behind a proxy or have bad network settings.
+113 error network
+113 error network If you are behind a proxy, please make sure that the
+113 error network 'proxy' config is set properly.  See: 'npm help config'
+114 verbose exit [ 1, true ]

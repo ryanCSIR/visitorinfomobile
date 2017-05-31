@@ -1,0 +1,13 @@
+{
+  "name": "mock-api-server",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "body-parser-json": "^1.9.2",
+    "express": "^4.14.0",
+    "express-public-ip": "^1.0.1"
+  },
+  "scripts": {
+	"start": "node ./server.js"
+  }
+}
